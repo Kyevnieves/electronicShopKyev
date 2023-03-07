@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic shop</title>
+    <script src="/js/tailwind/minified"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ffd803',
+                        secondary: '#272343',
+                        background: '#fffffe',
+                        stroke: '#272343',
+                        blue: '#001C82'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+    </style>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background px-4 py-4">
+    <header class="flex justify-center justify-between place-items-center fixed top-0 left-0 w-full h-12 bg-secondary z-10 px-6">
+        <button class="px-2 py-2 text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+        </button>
+        <h1 class="font-secondary text-white">Gededin</h1>
+        <button class="px-2 py-2 text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+        </button>
+    </header>
+    <main>
+    <!-- Empieza seccion Carousel-->
+    <div class="mt-4 snap pt-8" id="carousel">
+        <div class="carousel-inner">
+            <div class="item active w-11/12 bg-secondary p-4 mx-auto rounded-xl relative">
+                <div class="inner-text w-1/2">
+                    <h2 class="font-secondary text-sm text-slate-300">Zanbook Duo</h2>
+                    <h1 class="font-primary text-xl text-white">Unbelievable Visual <br> & Performance</h1>
+                    <button class="mt-4 px-6 py-2 bg-primary text-black rounded-xl font-bold font-secondary">Buy now</button>
+                </div>
+                <img src="/assets/images/laptop.webp" alt=""
+                class="absolute top-2 -right-4" width="200"
+                >
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="item active w-11/12 bg-secondary p-4 mx-auto rounded-xl relative">
+                <div class="inner-text w-1/2">
+                    <h2 class="font-secondary text-sm text-slate-300">Zanbook Duo</h2>
+                    <h1 class="font-primary text-xl text-white">Unbelievable Visual <br> & Performance</h1>
+                    <button class="mt-4 px-6 py-2 bg-primary text-black rounded-xl font-bold font-secondary">Buy now</button>
+                </div>
+                <img src="/assets/images/laptop.webp" alt="" class="absolute top-2 -right-4" width="200">
+            </div>
+        </div>
+    </div>
+    <div class="dots flex justify-center mt-3 gap-2 place-items-center">
+        <div class="dot w-4 h-1 bg-secondary rounded-xl">‎</div>
+        <div class="dot w-1 h-1 bg-slate-300">‎</div>
+        <div class="dot w-1 h-1 bg-slate-300">‎</div>
+        <div class="dot w-1 h-1 bg-slate-300">‎</div>
+    </div>
+    <!-- Termina seccion Carousel-->
+
+    <!-- Empieza seccion categorias-->
+    <div class="product-categories mt-6">
+        <div class=" drop-shadow-sm product-category bg-slate-200 bg-opacity-50 transition-all ease-in-out duration-300 hover:bg-secondary flex gap-2 py-2 px-4 rounded-xl w-1/2">
+            <img src="/assets/images/category-laptop.png" alt="" width="40"
+            class="p-1 rounded-xl bg-background img-category"
+            >
+            <div class="info">
+                <h1 class="font-secondary text-secondary text-sm">Laptop</h1>
+                <h2 class="font-secondary text-slate-600 text-sm">40 Products</h2>
+            </div>
+        </div>
+        <div class="product-category bg-slate-200 bg-opacity-50 transition-all ease-in-out duration-300 hover:bg-secondary flex gap-2 py-2 px-4 rounded-xl w-1/2">
+            <img src="/assets/images/category-speaker.png" alt="" width="40" 
+            class="p-1 rounded-xl bg-background img-category">
+            <div class="info hover:text-white">
+                <h1 class="font-secondary text-secondary-sm text-sm">Speaker</h1>
+                <h2 class="font-secondary text-slate-600 text-sm">25 Products</h2>
+            </div>
+        </div>
+        <div class="product-category bg-slate-200 bg-opacity-50 transition-all ease-in-out duration-300 hover:bg-secondary flex gap-2 py-2 px-4 rounded-xl w-1/2">
+            <img src="/assets/images/category-laptop.png" alt="" width="40" 
+            class="p-1 rounded-xl bg-background img-category">
+            <div class="info">
+                <h1 class="font-secondary text-secondary  text-sm">Laptop</h1>
+                <h2 class="font-secondary text-slate-600  text-sm">40 Products</h2>
+            </div>
+        </div>
+        <div class="product-category bg-slate-200 bg-opacity-50 transition-all ease-in-out duration-300 hover:bg-secondary flex gap-2 py-2 px-4 rounded-xl w-1/2">
+            <img src="/assets/images/category-speaker.png" alt="" width="40" 
+            class="p-1 rounded-xl bg-background img-category">
+            <div class="info">
+                <h1 class="font-secondary text-secondary text-sm">Speaker</h1>
+                <h2 class="font-secondary text-slate-600  text-sm">25 Products</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Termina seccion categorias-->
+
+    <!-- Empieza seccion Productos populares-->
+    <div class="popular-products w-full mt-4">
+        <div class="head flex justify-between mx-4 place-items-end">
+            <h1 class="font-primary text-2xl text-secondary">Popular Product</h1>
+            <h2 class="font-secondary text-slate-500 cursor-pointer">Se all</h2>
+        </div>
+        <div class="product-list mt-4 flex flex-wrap gap-4 ">
+            <div class="product-item bg-slate-300 bg-opacity-50 w-2-items p-2 rounded-xl mx-auto flex flex-col justify-center">
+                <div class="product-image">
+                    <img src="/assets/images/laptop-popular.webp" alt="" srcset="" width="300" height="200">
+                </div>
+                <div class="product-info relative bg-background px-4 py-2 rounded-xl">
+                    <h1 class="product-title font-primary text-lg">ProArt Studiobook</h1>
+                    <h2 class="brand font-secondary text-slate-500">Asus</h2>
+                    <h2 class="product-price font-primary text-xl">$2338,1</h2>
+                    <button class="absolute bottom-2 right-2 bg-slate-300 p-1 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-slate-300 bg-opacity-50 w-2-items p-2 rounded-xl mx-auto flex flex-col justify-center">
+                <div class="product-image">
+                    <img src="/assets/images/laptop-popular-2.webp" alt="" srcset="" width="300" height="200">
+                </div>
+                <div class="product-info relative bg-background px-4 py-2 rounded-xl">
+                    <h1 class="product-title font-primary text-lg">ProArt Studiobook</h1>
+                    <h2 class="brand font-secondary text-slate-500">Asus</h2>
+                    <h2 class="product-price font-primary text-xl">$2338,1</h2>
+                    <button class="absolute bottom-2 right-2 bg-slate-300 p-1 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-slate-300 bg-opacity-50 w-2-items p-2 rounded-xl mx-auto flex flex-col justify-center">
+                <div class="product-image">
+                    <img src="/assets/images/laptop-popular-2.webp" alt="" srcset="" width="300" height="200">
+                </div>
+                <div class="product-info relative bg-background px-4 py-2 rounded-xl">
+                    <h1 class="product-title font-primary text-lg">ProArt Studiobook</h1>
+                    <h2 class="brand font-secondary text-slate-500">Asus</h2>
+                    <h2 class="product-price font-primary text-xl">$2338,1</h2>
+                    <button class="absolute bottom-2 right-2 bg-slate-300 p-1 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-item bg-slate-300 bg-opacity-50 w-2-items p-2 rounded-xl mx-auto flex flex-col justify-center">
+                <div class="product-image">
+                    <img src="/assets/images/laptop-popular.webp" alt="" srcset="" width="300" height="200">
+                </div>
+                <div class="product-info relative bg-background px-4 py-2 rounded-xl">
+                    <h1 class="product-title font-primary text-lg">ProArt Studiobook</h1>
+                    <h2 class="brand font-secondary text-slate-500">Asus</h2>
+                    <h2 class="product-price font-primary text-xl">$2338,1</h2>
+                    <button class="absolute bottom-2 right-2 bg-slate-300 p-1 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script src="/index.js"></script>
+</body>
+</html>

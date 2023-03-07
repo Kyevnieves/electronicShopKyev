@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic shop</title>
+    <script src="/js/tailwind/minified"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ffd803',
+                        secondary: '#272343',
+                        background: '#fffffe',
+                        stroke: '#272343',
+                        blue: '#001C82'
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+    </style>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="bg-background px-4 py-4">
+    <header
+        class="flex justify-center justify-between place-items-center fixed top-0 left-0 w-full h-12 bg-secondary z-10 px-6">
+        <button class="px-2 py-2 text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+        </button>
+        <h1 class="font-secondary text-white">Gededin</h1>
+        <button class="px-2 py-2 text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+        </button>
+    </header>
+    <main>
+        <div class="container">
+        <nav class="mt-10 flex justify-between py-4 px-4">
+            <a href="/">
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
+                    </svg>
+                </button>
+            </a>
+            <h1 class="font-primary text-3xl">Carrito</h1>
+        </nav>
+        <div class="products-in-cart overflow-scroll pb-24">
+            <div class="product-item mx-auto bg-white flex p-4 justify-center place-items-center gap-4 border-b relative">
+                <div class="product-img">
+                    <img src="/assets/images/laptop-popular.webp" alt="" width="150">
+                </div>
+                <div class="product-info">
+                    <h2 class="brand font-secondary text-slate-400">Asus</h2>
+                    <h1 class="font-bold font-primary text-lg">ProArt Studio Book</h1>
+                    <h2 class="brand font-secondary text-slate-400">Ram 8gb, SSD 240gb</h2>
+                    <h1 class="font-bold font-primary text-lg text-primary">$2338,1</h1>
+                    <h2 class="brand font-secondary text-slate-400">Cantidad: 1</h2>
+                </div>
+                <div class="actions absolute right-0 top-6">
+                    <button class="deleteItem text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-item mx-auto bg-white flex p-4 justify-center place-items-center gap-4 border-b relative">
+                <div class="product-img">
+                    <img src="/assets/images/laptop-popular.webp" alt="" width="150">
+                </div>
+                <div class="product-info">
+                    <h2 class="brand font-secondary text-slate-400">Asus</h2>
+                    <h1 class="font-bold font-primary text-lg">ProArt Studio Book</h1>
+                    <h2 class="brand font-secondary text-slate-400">Ram 8gb, SSD 240gb</h2>
+                    <h1 class="font-bold font-primary text-lg text-primary">$2338,1</h1>
+                    <h2 class="brand font-secondary text-slate-400">Cantidad: 1</h2>
+                </div>
+                <div class="actions absolute right-0 top-6">
+                    <button class="deleteItem text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-item mx-auto bg-white flex p-4 justify-center place-items-center gap-4 border-b relative">
+                <div class="product-img">
+                    <img src="/assets/images/laptop-popular.webp" alt="" width="150">
+                </div>
+                <div class="product-info">
+                    <h2 class="brand font-secondary text-slate-400">Asus</h2>
+                    <h1 class="font-bold font-primary text-lg">ProArt Studio Book</h1>
+                    <h2 class="brand font-secondary text-slate-400">Ram 8gb, SSD 240gb</h2>
+                    <h1 class="font-bold font-primary text-lg text-primary">$2338,1</h1>
+                    <h2 class="brand font-secondary text-slate-400">Cantidad: 1</h2>
+                </div>
+                <div class="actions absolute right-0 top-6">
+                    <button class="deleteItem text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-item mx-auto bg-white flex p-4 justify-center place-items-center gap-4 border-b relative">
+                <div class="product-img">
+                    <img src="/assets/images/laptop-popular.webp" alt="" width="150">
+                </div>
+                <div class="product-info">
+                    <h2 class="brand font-secondary text-slate-400">Asus</h2>
+                    <h1 class="font-bold font-primary text-lg">ProArt Studio Book</h1>
+                    <h2 class="brand font-secondary text-slate-400">Ram 8gb, SSD 240gb</h2>
+                    <h1 class="font-bold font-primary text-lg text-primary">$2338,1</h1>
+                    <h2 class="brand font-secondary text-slate-400">Cantidad: 1</h2>
+                </div>
+                <div class="actions absolute right-0 top-6">
+                    <button class="deleteItem text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-item mx-auto bg-white flex p-4 justify-center place-items-center gap-4 border-b relative">
+                <div class="product-img">
+                    <img src="/assets/images/laptop-popular.webp" alt="" width="150">
+                </div>
+                <div class="product-info">
+                    <h2 class="brand font-secondary text-slate-400">Asus</h2>
+                    <h1 class="font-bold font-primary text-lg">ProArt Studio Book</h1>
+                    <h2 class="brand font-secondary text-slate-400">Ram 8gb, SSD 240gb</h2>
+                    <h1 class="font-bold font-primary text-lg text-primary">$2338,1</h1>
+                    <h2 class="brand font-secondary text-slate-400">Cantidad: 1</h2>
+                </div>
+                <div class="actions absolute right-0 top-6">
+                    <button class="deleteItem text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-item mx-auto bg-white flex p-4 justify-center place-items-center gap-4 border-b relative">
+                <div class="product-img">
+                    <img src="/assets/images/laptop-popular.webp" alt="" width="150">
+                </div>
+                <div class="product-info">
+                    <h2 class="brand font-secondary text-slate-400">Asus</h2>
+                    <h1 class="font-bold font-primary text-lg">ProArt Studio Book</h1>
+                    <h2 class="brand font-secondary text-slate-400">Ram 8gb, SSD 240gb</h2>
+                    <h1 class="font-bold font-primary text-lg text-primary">$2338,1</h1>
+                    <h2 class="brand font-secondary text-slate-400">Cantidad: 1</h2>
+                </div>
+                <div class="actions absolute right-0 top-6">
+                    <button class="deleteItem text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="product-item mx-auto bg-white flex p-4 justify-center place-items-center gap-4 border-b relative">
+                <div class="product-img">
+                    <img src="/assets/images/laptop-popular.webp" alt="" width="150">
+                </div>
+                <div class="product-info">
+                    <h2 class="brand font-secondary text-slate-400">Asus</h2>
+                    <h1 class="font-bold font-primary text-lg">ProArt Studio Book</h1>
+                    <h2 class="brand font-secondary text-slate-400">Ram 8gb, SSD 240gb</h2>
+                    <h1 class="font-bold font-primary text-lg text-primary">$2338,1</h1>
+                    <h2 class="brand font-secondary text-slate-400">Cantidad: 1</h2>
+                </div>
+                <div class="actions absolute right-0 top-6">
+                    <button class="deleteItem text-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer flex py-4 px-6 fixed -left-0 bottom-0 bg-secondary rounded-t-3xl w-full">
+            <div class="total mr-auto">
+                <h2 class="text-sm text-slate-400 font-secondary">Total</h2>
+                <h1 class="font-primary text-primary text-xl font-bols">$2338,1</h1>
+            </div>
+            <div class="actions">
+                <div class="order mt-1">
+                    <button class="px-8 py-2 rounded-md text-white font-bold font-primary bg-secondary flex gap-2">Procesar
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="/index.js"></script>
+</body>
+
+</html>
